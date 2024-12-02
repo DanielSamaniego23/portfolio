@@ -1,0 +1,77 @@
+/* Estilos generales del cuerpo */
+body {
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Caja para la barra de navegación */
+  nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Estilo para los enlaces */
+  nav a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Efecto al pasar el ratón sobre los enlaces */
+  nav a:hover {
+    background-color: #ff73fd;
+    transform: translateY(-2px);
+  }
+  
+  /* Resaltar el enlace activo */
+  nav a.router-link-active {
+    background-color: #ff73fd;
+    color: #fff;
+  }
+  
+  /* Estilo para el área del router-outlet */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(172, 170, 173); /* Color galáctico (RGB) */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(182, 168, 196, 0.7), 0 0 20px rgba(181, 174, 188, 0.6), 0 0 30px rgba(188, 181, 195, 0.5);
+    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text is centered */
+    height: 100%;   
+}
+  
