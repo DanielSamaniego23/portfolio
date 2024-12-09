@@ -1,77 +1,131 @@
+/* Asegúrate de que el contenedor de partículas ocupe toda la pantalla */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
 /* Estilos generales del cuerpo */
 body {
-    background: linear-gradient(135deg, #1d2b64, #f8cdda);
-    color: white;
+    background: transparent; /* Cambia a transparente para ver las partículas */
+    color: #3c3c3c;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Cambia a flex-start para alinear el contenido en la parte superior */
     height: 100vh;
     text-align: center;
-  }
-  
-  /* Caja para la barra de navegación */
-  nav {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative; /* Asegúrate de que el contenedor esté en relación con el fondo */
+    z-index: 1; /* Asegúrate de que esté por encima de las partículas */
+    width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho */
+}
+
+/* Caja para la barra de navegación */
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-  }
-  
-  /* Estilo para los enlaces */
-  nav a {
+    gap: 15px;
+    margin-bottom: 20px; /* Añadir espacio entre el menú y el título */
+}
+
+/* Estilo para los enlaces */
+nav a {
     font-size: 1.2rem;
-    color: #fff;
+    color: #3c3c3c;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Efecto al pasar el ratón sobre los enlaces */
-  nav a:hover {
-    background-color: #ff73fd;
-    transform: translateY(-2px);
-  }
-  
-  /* Resaltar el enlace activo */
-  nav a.router-link-active {
-    background-color: #ff73fd;
-    color: #fff;
-  }
-  
-  /* Estilo para el área del router-outlet */
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Efecto al pasar el ratón sobre los enlaces */
+nav a:hover {
+    background-color: #d1e0f0;
+    transform: translateY(-2px);
+}
+
+/* Resaltar el enlace activo */
+nav a.router-link-active {
+    background-color: #b0d0e0;
+    color: #3c3c3c;
+}
+
+/* Estilo para el título */
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(172, 170, 173); /* Color galáctico (RGB) */
+    color: #4a7c2e; /* Color verde inspirado en la naturaleza */
     margin-bottom: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(182, 168, 196, 0.7), 0 0 20px rgba(181, 174, 188, 0.6), 0 0 30px rgba(188, 181, 195, 0.5);
-    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Ensure text is centered */
-    height: 100%;   
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Estilo para el contenido del router-outlet */
+.router-outlet {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #3c3c3c;
+}.container {
+    font-family: Arial, sans-serif;
+  }
   
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-item.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  /* Asegúrate de que el contenedor de partículas ocupe toda la pantalla */
+#particles-js {
+    position: absolute;
+    width: 100
+     }
+     
+     #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Asegúrate de que esté detrás del contenido */
+  }
